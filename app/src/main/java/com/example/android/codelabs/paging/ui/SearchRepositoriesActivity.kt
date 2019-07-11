@@ -53,6 +53,8 @@ class SearchRepositoriesActivity : AppCompatActivity() {
         val query = savedInstanceState?.getString(LAST_SEARCH_QUERY) ?: DEFAULT_QUERY
         viewModel.searchRepo(query)
         initSearch(query)
+
+        // test commit
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
